@@ -75,7 +75,7 @@ class RefSphere:
         self.V, self.F = self._build_sphere()
 
         ## build BVH
-        self.bvh = buildBVH(self.V. self.F)
+        self.bvh = buildBVH(self.V, self.F)
     
     def _build_sphere(self) -> Tuple[np.ndarray, np.ndarray]:
         """Build the sphere.
