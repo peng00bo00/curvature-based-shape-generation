@@ -1,8 +1,8 @@
+from typing import Tuple
+
 import igl
 import numpy as np
 from scipy.sparse import diags
-
-from typing import Tuple
 
 from .util import VFAdj, VFAdj_density
 from .delaunay import delaunay

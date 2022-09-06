@@ -2,6 +2,7 @@ import numpy as np
 import igl
 
 from .util import timeit
+
 from ..utils import Mesh, QuaternionMatrix
 
 

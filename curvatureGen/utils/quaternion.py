@@ -1,8 +1,7 @@
-from time import time
 from typing import Tuple
 
+from time import time
 import numpy as np
-
 import scipy
 from scipy.sparse import csr_matrix
 

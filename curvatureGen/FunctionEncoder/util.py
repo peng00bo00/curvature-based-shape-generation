@@ -3,6 +3,7 @@ from scipy.spatial.transform import Rotation
 
 from ..utils import normalize, normalizeSphere
 
+
 def vrrotvec(a: np.ndarray, b: np.ndarray) -> np.ndarray:
     """Find the relative rotation from vector a to vector b.
 

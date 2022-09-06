@@ -1,5 +1,6 @@
 import igl
 import numpy as np
+
 from .quaternion import Quaternion, QList
 
 class Mesh:

@@ -1,6 +1,7 @@
+from typing import Tuple
+
 import numpy as np
 from scipy.sparse import csr_matrix
-from typing import Tuple
 
 def stereographic(x: np.ndarray, y: np.ndarray, z: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
     """Stereographic projection.

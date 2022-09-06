@@ -1,4 +1,5 @@
 from typing import List, Tuple
+
 import numpy as np
 import igl
 
@@ -49,9 +50,9 @@ def subdivision(V: np.ndarray, F: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
     ## build 4 new faces on the original face
     F_new = np.concatenate([
                             np.stack([Vij, Vjk, Vki]).T,
-                            np.stack([Vi, Vij, Vki]).T,
-                            np.stack([Vij, Vj, Vjk]).T,
-                            np.stack([Vki, Vjk, Vk]).T,
+                            np.stack([ Vi, Vij, Vki]).T,
+                            np.stack([Vij,  Vj, Vjk]).T,
+                            np.stack([Vki, Vjk,  Vk]).T,
                             ], axis=1)
     
     F_new = F_new.reshape((-1, 3))

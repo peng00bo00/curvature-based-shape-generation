@@ -1,10 +1,11 @@
+from typing import Tuple
+
 import igl
 import numpy as np
 from scipy.spatial import Delaunay
 
 from .util import stereographic, tangentSpace
 
-from typing import Tuple
 
 def delaunay(V: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
     """Delaunay triangulation on a (unit) sphere.
