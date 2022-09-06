@@ -9,7 +9,7 @@ from ..BVH import buildBVH
 from ..SphereDelaunay import delaunay
 
 
-def subdivision(V: np.ndarray, F: np.ndarray):
+def subdivision(V: np.ndarray, F: np.ndarray) -> Tuple[np.ndarray, np.ndarray]:
     """Edge subdivision of a sphere mesh.
 
     Args:
